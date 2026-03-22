@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Z Elite Auto Care Blog - Auto care tips, maintenance guides, detailing advice, and industry news." />
+  <title>Blog &amp; Tips - Z Elite Auto Care</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-spinner"></div></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill"></i> Z <span>Elite</span> Auto Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="our-work.html">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+        <li class="nav-item"><a class="nav-link navbar-cta" href="contact.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Blog</li></ol></nav>
+    <h1>Auto Care <span>Tips &amp; News</span></h1>
+    <p style="color:rgba(255,255,255,0.6);margin:0.5rem 0 0;max-width:500px;">Expert advice, maintenance guides, and the latest news from our team.</p>
+  </div>
+</section>
+
+<!-- Blog Content -->
+<section class="section-pad">
+  <div class="container">
+
+    <!-- Blog Search Bar -->
+    <div class="mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div style="position:relative;">
+            <i class="fas fa-search" style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.35);pointer-events:none;"></i>
+            <input type="text" id="blogSearch" class="faq-search" placeholder="Search blog posts..." style="padding-left:2.75rem;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Blog Posts Column -->
+      <div class="col-lg-8">
+        <div class="row g-4" id="blogGrid">
+
+          <!-- Post 1 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+            <div class="blog-card fade-in-up">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=60" alt="How Often Should You Change Your Oil?" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Maintenance Tips</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>March 15, 2024</span>
+                </div>
+                <h5>How Often Should You Really Change Your Oil?</h5>
+                <p>The old "every 3,000 miles" rule is outdated for modern vehicles. We break down exactly what your car's manual says and what today's synthetic oils can do for your engine.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="detailing">
+            <div class="blog-card fade-in-up" data-delay="100">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=61" alt="Ceramic Coating Guide" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Detailing</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>March 8, 2024</span>
+                </div>
+                <h5>The Ultimate Guide to Ceramic Coating: Is It Worth It?</h5>
+                <p>Ceramic coating has transformed paint protection, but many car owners still wonder if the cost justifies the benefits. We explain exactly what you get and why serious car owners swear by it.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="repairs">
+            <div class="blog-card fade-in-up" data-delay="200">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=62" alt="Warning Signs Your Brakes Need Service" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Repairs</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>February 28, 2024</span>
+                </div>
+                <h5>5 Warning Signs Your Brakes Need Immediate Attention</h5>
+                <p>Ignoring brake problems is one of the most dangerous things a driver can do. Learn these critical warning signs and understand why prompt action could save your life.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+            <div class="blog-card fade-in-up" data-delay="300">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=63" alt="Seasonal Car Maintenance" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Maintenance Tips</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>February 14, 2024</span>
+                </div>
+                <h5>Seasonal Car Maintenance: Preparing Your Vehicle for Summer</h5>
+                <p>Summer heat is brutal on your vehicle's cooling system, tires, and air conditioning. Here's your complete checklist to make sure your car is summer-ready before temperatures peak.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="detailing">
+            <div class="blog-card fade-in-up" data-delay="400">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=64" alt="DIY vs Professional Detailing" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Detailing</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 30, 2024</span>
+                </div>
+                <h5>DIY Car Wash vs. Professional Detailing: The Real Difference</h5>
+                <p>Sure, you can wash your car at home — but professional detailing is a completely different level of care. We reveal what professional detailers actually do that you can't replicate in your driveway.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="news">
+            <div class="blog-card fade-in-up" data-delay="500">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=65" alt="Z Elite Auto Care News" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">News</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 15, 2024</span>
+                </div>
+                <h5>Z Elite Auto Care Now Offering Ceramic Coating Packages from $599</h5>
+                <p>We're excited to launch our new range of professional ceramic coating packages, designed to suit every budget and vehicle type. Read about our new partnership with industry-leading coating brands.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 7 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="repairs">
+            <div class="blog-card fade-in-up">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=66" alt="Engine Diagnostics Guide" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Repairs</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 5, 2024</span>
+                </div>
+                <h5>Check Engine Light On? Here's What It Actually Means</h5>
+                <p>The check engine light is one of the most misunderstood warnings in modern vehicles. Don't panic — but don't ignore it either. Learn what the most common codes mean and when to act.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 8 -->
+          <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+            <div class="blog-card fade-in-up" data-delay="100">
+              <div class="blog-card-img">
+                <img src="https://picsum.photos/600/400?random=67" alt="Tire Care Tips" loading="lazy" />
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta">
+                  <span class="blog-category">Maintenance Tips</span>
+                  <span class="blog-date"><i class="bi bi-calendar3 me-1"></i>December 20, 2023</span>
+                </div>
+                <h5>Tire Care 101: Everything You Need to Know to Stay Safe</h5>
+                <p>Your tires are the only part of your car that touches the road, making proper tire care absolutely critical. We cover pressure, rotation schedules, tread depth, and when to replace your tires.</p>
+                <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5" aria-label="Blog pagination">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">‹ Prev</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next ›</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+
+        <!-- Sidebar Search -->
+        <div class="sidebar-widget">
+          <h5>Search Blog</h5>
+          <div class="sidebar-search">
+            <input type="text" placeholder="Search posts..." id="sidebarSearch" />
+            <button class="btn-red" style="padding:0.6rem 1rem;border:none;border-radius:6px;cursor:pointer;white-space:nowrap;">Go</button>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="sidebar-widget">
+          <h5>Categories</h5>
+          <ul class="category-list">
+            <li><a href="#" class="category-filter-link" data-category="all">All Posts <span>8</span></a></li>
+            <li><a href="#" class="category-filter-link" data-category="maintenance">Maintenance Tips <span>3</span></a></li>
+            <li><a href="#" class="category-filter-link" data-category="detailing">Detailing <span>2</span></a></li>
+            <li><a href="#" class="category-filter-link" data-category="repairs">Repairs <span>2</span></a></li>
+            <li><a href="#" class="category-filter-link" data-category="news">News &amp; Updates <span>1</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="sidebar-widget">
+          <h5>Recent Posts</h5>
+          <div class="recent-post-item">
+            <img src="https://picsum.photos/120/80?random=60" alt="Oil Change Post" loading="lazy" />
+            <div>
+              <a href="#">How Often Should You Really Change Your Oil?</a>
+              <span>March 15, 2024</span>
+            </div>
+          </div>
+          <div class="recent-post-item">
+            <img src="https://picsum.photos/120/80?random=61" alt="Ceramic Coating Post" loading="lazy" />
+            <div>
+              <a href="#">The Ultimate Guide to Ceramic Coating</a>
+              <span>March 8, 2024</span>
+            </div>
+          </div>
+          <div class="recent-post-item">
+            <img src="https://picsum.photos/120/80?random=62" alt="Brake Warning Post" loading="lazy" />
+            <div>
+              <a href="#">5 Warning Signs Your Brakes Need Attention</a>
+              <span>February 28, 2024</span>
+            </div>
+          </div>
+          <div class="recent-post-item">
+            <img src="https://picsum.photos/120/80?random=63" alt="Seasonal Maintenance Post" loading="lazy" />
+            <div>
+              <a href="#">Seasonal Car Maintenance for Summer</a>
+              <span>February 14, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="sidebar-widget">
+          <h5>Newsletter</h5>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.87rem;margin-bottom:1rem;">Subscribe for auto care tips, special offers, and the latest news from Z Elite.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email Address" />
+            <button type="submit" class="btn-red w-100" style="padding:0.65rem;border:none;border-radius:6px;cursor:pointer;font-size:0.9rem;">
+              <i class="bi bi-envelope-fill me-2"></i>Subscribe Now
+            </button>
+          </form>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-widget">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="services.html">View All Services</a></li>
+            <li><a href="our-work.html">Before &amp; After Gallery</a></li>
+            <li><a href="contact.html">Book a Service</a></li>
+            <li><a href="faq.html">Read FAQs</a></li>
+            <li><a href="testimonials.html">Customer Reviews</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container text-center position-relative">
+    <h2 class="section-title">Put Our Advice Into Action!</h2>
+    <p style="color:rgba(255,255,255,0.9);font-size:1.05rem;margin-bottom:2rem;">Don't just read about great auto care — experience it firsthand. Book your service today.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="contact.html" class="btn-red" style="background:#fff;color:var(--primary-red);border-color:#fff;">Book a Service <i class="bi bi-arrow-right ms-1"></i></a>
+      <a href="services.html" class="btn-outline-red">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Z <span>Elite</span> Auto Care</a>
+        <p class="footer-desc">Your trusted partner for professional auto care services. Available 24/7 to keep your vehicle in peak condition.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Engine Diagnostics</a></li>
+          <li><a href="services.html">Brake Service</a></li>
+          <li><a href="services.html">Auto Detailing</a></li>
+          <li><a href="services.html">Ceramic Coating</a></li>
+          <li><a href="services.html">Roadside Help</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>(123) 456-7890<br><small>Available 24/7</small></span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@zeliteautocare.com</span></div>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Auto Drive, Suite 100<br>Your City, State 12345</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Open 24/7 — 365 Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 <span>Z Elite Auto Care</span>. All Rights Reserved. | <a href="contact.html" style="color:var(--primary-red);">Contact Us</a> | <a href="faq.html" style="color:var(--primary-red);">FAQ</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-phone="1234567890">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Sidebar search mirrors main search
+  const sidebarSearch = document.getElementById('sidebarSearch');
+  const mainSearch = document.getElementById('blogSearch');
+  if (sidebarSearch && mainSearch) {
+    sidebarSearch.addEventListener('input', function() {
+      mainSearch.value = this.value;
+      mainSearch.dispatchEvent(new Event('input'));
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Z Elite Auto Care to book a service, request a quote, or get in touch. Available 24/7." />
+  <title>Contact Us - Z Elite Auto Care</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-spinner"></div></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill"></i> Z <span>Elite</span> Auto Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="our-work.html">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+        <li class="nav-item"><a class="nav-link active navbar-cta" href="contact.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Contact</li></ol></nav>
+    <h1>Contact <span>Us</span></h1>
+    <p style="color:rgba(255,255,255,0.6);margin:0.5rem 0 0;max-width:500px;">Book a service, request a quote, or simply get in touch. We're here 24/7.</p>
+  </div>
+</section>
+
+<!-- Contact Form & Info -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div style="background:var(--dark-bg-2);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:2.5rem;">
+          <h3 style="color:var(--white);font-weight:800;margin-bottom:0.5rem;">Book a Service</h3>
+          <p style="color:rgba(255,255,255,0.55);font-size:0.9rem;margin-bottom:2rem;">Fill out the form below and we'll get back to you within 1 hour.</p>
+
+          <!-- Success Message -->
+          <div id="formSuccess" class="alert-success-custom d-none mb-3">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            <strong>Message sent!</strong> We'll contact you shortly to confirm your booking.
+          </div>
+          <!-- Error Message -->
+          <div id="formError" class="alert-error-custom d-none mb-3">
+            <i class="bi bi-exclamation-circle-fill me-2"></i>
+            Please fill in all required fields correctly.
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label" for="contactName">Full Name <span style="color:var(--primary-red);">*</span></label>
+                <input type="text" class="form-control" id="contactName" placeholder="John Smith" required minlength="2" />
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="contactEmail">Email Address <span style="color:var(--primary-red);">*</span></label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" class="form-control" id="contactPhone" placeholder="(123) 456-7890" />
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="contactService">Service Type <span style="color:var(--primary-red);">*</span></label>
+                <select class="form-select" id="contactService" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="engine-diagnostics">Engine Diagnostics</option>
+                  <option value="oil-change">Oil &amp; Filter Change</option>
+                  <option value="brake-service">Brake Service</option>
+                  <option value="transmission">Transmission Service</option>
+                  <option value="tire-service">Tire Rotation &amp; Balancing</option>
+                  <option value="battery">Battery Replacement</option>
+                  <option value="ac-service">Air Conditioning Service</option>
+                  <option value="suspension">Suspension &amp; Steering</option>
+                  <option value="full-detailing">Full Car Detailing</option>
+                  <option value="interior-detailing">Interior Detailing</option>
+                  <option value="exterior-polish">Exterior Polish &amp; Wax</option>
+                  <option value="paint-correction">Paint Correction</option>
+                  <option value="ceramic-coating">Ceramic Coating</option>
+                  <option value="engine-steam">Engine Steam Clean</option>
+                  <option value="roadside">Roadside Assistance</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="invalid-feedback">Please select a service.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="contactDateTime">Preferred Date &amp; Time</label>
+                <input type="datetime-local" class="form-control" id="contactDateTime" />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="contactVehicle">Vehicle (Year, Make, Model)</label>
+                <input type="text" class="form-control" id="contactVehicle" placeholder="e.g. 2020 Toyota Camry" />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="contactMessage">Message / Additional Details <span style="color:var(--primary-red);">*</span></label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Describe your issue or any additional information..." required minlength="10"></textarea>
+                <div class="invalid-feedback">Please provide at least 10 characters of detail.</div>
+              </div>
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn-red w-100" style="padding:0.8rem;font-size:1rem;border-radius:6px;border:none;cursor:pointer;">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="mb-4">
+          <span class="section-tag">Get In Touch</span>
+          <h3 style="color:var(--white);font-weight:800;margin-bottom:0.5rem;">Contact <span style="color:var(--primary-red);">Information</span></h3>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">Reach out via any of the channels below. We're available around the clock.</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-info-content">
+            <strong>Phone (24/7)</strong>
+            <span>(123) 456-7890</span>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info-content">
+            <strong>Email</strong>
+            <span>info@zeliteautocare.com</span>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-info-content">
+            <strong>Address</strong>
+            <span>123 Auto Drive, Suite 100<br>Your City, State 12345</span>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-info-content">
+            <strong>Hours</strong>
+            <span>Open 24/7 — 365 Days a Year<br><small style="color:#28a745;">● We're open right now</small></span>
+          </div>
+        </div>
+
+        <!-- WhatsApp Section -->
+        <div style="background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.25);border-radius:12px;padding:1.5rem;margin-top:1.5rem;">
+          <h5 style="color:var(--white);font-weight:700;margin-bottom:0.5rem;"><i class="fab fa-whatsapp me-2" style="color:#25D366;"></i>Chat on WhatsApp</h5>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:1rem;">Get instant replies on WhatsApp. Message us now for quick booking or questions.</p>
+          <a href="https://wa.me/1234567890?text=Hello%2C%20I%20would%20like%20to%20book%20a%20service%20at%20Z%20Elite%20Auto%20Care." target="_blank" rel="noopener"
+            style="display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;padding:0.7rem 1.5rem;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;transition:background 0.3s;">
+            <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Message Us on WhatsApp
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div style="margin-top:1.5rem;">
+          <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:0.75rem;">Follow us on social media</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Z <span>Elite</span> Auto Care</a>
+        <p class="footer-desc">Your trusted partner for professional auto care services. Available 24/7 to keep your vehicle in peak condition.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Engine Diagnostics</a></li>
+          <li><a href="services.html">Brake Service</a></li>
+          <li><a href="services.html">Auto Detailing</a></li>
+          <li><a href="services.html">Ceramic Coating</a></li>
+          <li><a href="services.html">Roadside Help</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>(123) 456-7890<br><small>Available 24/7</small></span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@zeliteautocare.com</span></div>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Auto Drive, Suite 100<br>Your City, State 12345</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Open 24/7 — 365 Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 <span>Z Elite Auto Care</span>. All Rights Reserved. | <a href="contact.html" style="color:var(--primary-red);">Contact Us</a> | <a href="faq.html" style="color:var(--primary-red);">FAQ</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-phone="1234567890">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
