@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Z Elite Auto Care - Before and after gallery showcasing our auto detailing, paint correction, and mechanical repair work." />
+  <title>Our Work - Z Elite Auto Care</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-spinner"></div></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill"></i> Z <span>Elite</span> Auto Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="our-work.html">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact &amp; Location</a></li>
+        <li class="nav-item"><a class="nav-link navbar-cta" href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Our Work</li></ol></nav>
+    <h1>Our <span>Work</span></h1>
+    <p style="color:rgba(255,255,255,0.6);margin:0.5rem 0 0;max-width:500px;">See the transformations we create — before and after comparisons of our finest work.</p>
+  </div>
+</section>
+
+<!-- Filter Buttons -->
+<section class="section-pad-sm" style="padding-bottom:0;">
+  <div class="container">
+    <div class="filter-btn-group justify-content-center mb-4">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="mechanical">Mechanical Repairs</button>
+      <button class="filter-btn" data-filter="detailing">Detailing</button>
+      <button class="filter-btn" data-filter="paint">Paint Work</button>
+    </div>
+  </div>
+</section>
+
+<!-- Before/After Gallery -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Transformations</span>
+      <h2 class="section-title">Before &amp; <span>After</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle mt-3">Drag the slider on each image to reveal the transformation. Results speak for themselves.</p>
+    </div>
+    <div class="row g-4">
+
+      <!-- Item 1 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="detailing">
+        <div class="fade-in-up">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=20" alt="Before paint correction" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=21" alt="After paint correction" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Detailing</span>
+            <h5>Full Paint Correction</h5>
+            <p>Swirl marks and scratches eliminated. Mirror-like finish restored.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="mechanical">
+        <div class="fade-in-up" data-delay="100">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=22" alt="Before engine clean" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=23" alt="After engine clean" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Mechanical</span>
+            <h5>Engine Bay Restoration</h5>
+            <p>Complete engine steam clean and service on a 2019 sedan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="paint">
+        <div class="fade-in-up" data-delay="200">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=24" alt="Before paint work" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=25" alt="After paint work" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Paint Work</span>
+            <h5>Scratch &amp; Dent Repair</h5>
+            <p>Deep scratch repair and spot paint correction on rear panel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="detailing">
+        <div class="fade-in-up" data-delay="300">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=26" alt="Before interior detailing" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=27" alt="After interior detailing" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Detailing</span>
+            <h5>Interior Deep Clean</h5>
+            <p>Full interior steam clean, leather conditioning, and odor treatment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="paint">
+        <div class="fade-in-up" data-delay="400">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=28" alt="Before ceramic coat" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=29" alt="After ceramic coat" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Paint Work</span>
+            <h5>Ceramic Coating Application</h5>
+            <p>9H ceramic coating for 3+ years of premium paint protection.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="mechanical">
+        <div class="fade-in-up" data-delay="500">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=30" alt="Before brake work" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=31" alt="After brake work" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Mechanical</span>
+            <h5>Brake System Overhaul</h5>
+            <p>Complete brake pad, rotor, and caliper replacement front and rear.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="detailing">
+        <div class="fade-in-up">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=32" alt="Before exterior polish" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=33" alt="After exterior polish" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Detailing</span>
+            <h5>Exterior Polish &amp; Wax</h5>
+            <p>Machine polish and premium carnauba wax for maximum shine.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="mechanical">
+        <div class="fade-in-up" data-delay="100">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=34" alt="Before transmission work" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=35" alt="After transmission work" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Mechanical</span>
+            <h5>Transmission Service</h5>
+            <p>Full transmission fluid change and performance tune on a 2020 SUV.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 9 -->
+      <div class="col-md-6 col-lg-4 work-filter-item" data-category="paint">
+        <div class="fade-in-up" data-delay="200">
+          <div class="before-after-container">
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label after">After</span></div>
+            <div class="before-img">
+              <img src="https://picsum.photos/400/280?random=36" alt="Before oxidation removal" />
+            </div>
+            <div class="after-img">
+              <img src="https://picsum.photos/400/280?random=37" alt="After oxidation removal" />
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-badge">Paint Work</span>
+            <h5>Oxidation Removal</h5>
+            <p>Heavy oxidation removed from hood and roof, color restored perfectly.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Work Photos Carousel -->
+<section class="section-pad" style="background:var(--dark-bg-2);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title">Work <span>Gallery</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-lg overflow-hidden">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1200/450?random=40" class="d-block w-100" alt="Work gallery 1" style="height:420px;object-fit:cover;" />
+          <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.6);border-radius:8px;padding:1rem 1.5rem;bottom:20px;">
+            <h5>Premium Full Detailing Package</h5>
+            <p>Complete transformation inside and out.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/450?random=41" class="d-block w-100" alt="Work gallery 2" style="height:420px;object-fit:cover;" />
+          <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.6);border-radius:8px;padding:1rem 1.5rem;bottom:20px;">
+            <h5>Engine Bay Deep Clean</h5>
+            <p>Professional steam cleaning — factory fresh results.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1200/450?random=42" class="d-block w-100" alt="Work gallery 3" style="height:420px;object-fit:cover;" />
+          <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.6);border-radius:8px;padding:1rem 1.5rem;bottom:20px;">
+            <h5>Ceramic Coating Application</h5>
+            <p>Multi-year protection and incredible gloss.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container text-center position-relative">
+    <h2 class="section-title">Want Results Like These?</h2>
+    <p style="color:rgba(255,255,255,0.9);font-size:1.05rem;margin-bottom:2rem;">Book your service today and experience the Z Elite difference.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="contact.html" class="btn-red" style="background:#fff;color:var(--primary-red);border-color:#fff;">Book Now <i class="bi bi-arrow-right ms-1"></i></a>
+      <a href="services.html" class="btn-outline-red">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Z <span>Elite</span> Auto Care</a>
+        <p class="footer-desc">Your trusted partner for professional auto care services. Available 24/7 to keep your vehicle in peak condition.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact &amp; Location</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Engine Diagnostics</a></li>
+          <li><a href="services.html">Brake Service</a></li>
+          <li><a href="services.html">Auto Detailing</a></li>
+          <li><a href="services.html">Ceramic Coating</a></li>
+          <li><a href="services.html">Roadside Help</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>(123) 456-7890<br><small>Available 24/7</small></span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@zeliteautocare.com</span></div>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Auto Drive, Suite 100<br>Your City, State 12345</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Open 24/7 — 365 Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 <span>Z Elite Auto Care</span>. All Rights Reserved. | <a href="contact.html" style="color:var(--primary-red);">Contact Us</a> | <a href="community.html" style="color:var(--primary-red);">Community</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-phone="1234567890">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
