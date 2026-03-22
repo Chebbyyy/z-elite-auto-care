@@ -1207,3 +1207,87 @@ img.loaded { opacity: 1; }
   .hero-btns .btn-red, .hero-btns .btn-outline-red { width: 100%; text-align: center; }
   .cta-banner { padding: 3rem 0; }
 }
+
+/* ===== PAGE TABS (Contact & Location / Community) ===== */
+.page-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+.page-tabs .nav-link {
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+.page-tabs .nav-link:hover {
+  background: rgba(220,20,60,0.1);
+  border-color: rgba(220,20,60,0.4);
+  color: var(--white);
+}
+.page-tabs .nav-link.active {
+  background: var(--primary-red);
+  border-color: var(--primary-red);
+  color: var(--white);
+}
+
+/* ===== BOOKING PAGE ===== */
+.booking-section-title {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--primary-red);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.82rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.service-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+}
+.service-checkbox-label:hover {
+  background: rgba(220,20,60,0.08);
+  border-color: rgba(220,20,60,0.3);
+  color: var(--white);
+}
+.service-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-red);
+  flex-shrink: 0;
+}
+.service-checkbox-label:has(input:checked) {
+  background: rgba(220,20,60,0.12);
+  border-color: var(--primary-red);
+  color: var(--white);
+}

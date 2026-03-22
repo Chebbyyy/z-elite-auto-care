@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Z Elite Auto Care Community - Customer testimonials, auto care blog, and frequently asked questions all in one place." />
+  <title>Community - Z Elite Auto Care</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-spinner"></div></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill"></i> Z <span>Elite</span> Auto Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="our-work.html">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact &amp; Location</a></li>
+        <li class="nav-item"><a class="nav-link navbar-cta" href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Community</li></ol></nav>
+    <h1>Our <span>Community</span></h1>
+    <p style="color:rgba(255,255,255,0.6);margin:0.5rem 0 0;max-width:520px;">Reviews from happy customers, auto care tips, and answers to your questions — all in one place.</p>
+  </div>
+</section>
+
+<!-- Tab Navigation -->
+<section style="background:var(--dark-bg-2);border-bottom:1px solid rgba(255,255,255,0.07);">
+  <div class="container">
+    <ul class="nav nav-pills page-tabs" id="communityTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="testimonials-tab" data-bs-toggle="pill" data-bs-target="#tab-testimonials" type="button" role="tab" aria-controls="tab-testimonials" aria-selected="true">
+          <i class="bi bi-star-fill me-2"></i>Testimonials
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="blog-tab" data-bs-toggle="pill" data-bs-target="#tab-blog" type="button" role="tab" aria-controls="tab-blog" aria-selected="false">
+          <i class="bi bi-newspaper me-2"></i>Blog &amp; Tips
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="faq-tab" data-bs-toggle="pill" data-bs-target="#tab-faq" type="button" role="tab" aria-controls="tab-faq" aria-selected="false">
+          <i class="bi bi-question-circle-fill me-2"></i>FAQ
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="tab-content" id="communityTabContent">
+
+  <!-- ===== TAB 1: TESTIMONIALS ===== -->
+  <div class="tab-pane fade show active" id="tab-testimonials" role="tabpanel" aria-labelledby="testimonials-tab">
+
+    <!-- Rating Summary -->
+    <section class="section-pad-sm" style="background:var(--dark-bg-2);">
+      <div class="container">
+        <div class="rating-summary">
+          <div class="row align-items-center g-4">
+            <div class="col-md-3 text-center">
+              <div class="big-rating">4.9</div>
+              <div class="rating-stars-big">★★★★★</div>
+              <p style="color:rgba(255,255,255,0.55);font-size:0.85rem;margin-top:0.5rem;">Based on 218 reviews</p>
+            </div>
+            <div class="col-md-9">
+              <div class="row g-2">
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:60px;">5 Stars</span>
+                  <div class="rating-bar flex-grow-1"><div class="rating-bar-fill" style="width:92%;"></div></div>
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:35px;">92%</span>
+                </div>
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:60px;">4 Stars</span>
+                  <div class="rating-bar flex-grow-1"><div class="rating-bar-fill" style="width:6%;background:#28a745;"></div></div>
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:35px;">6%</span>
+                </div>
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:60px;">3 Stars</span>
+                  <div class="rating-bar flex-grow-1"><div class="rating-bar-fill" style="width:2%;background:#17a2b8;"></div></div>
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:35px;">2%</span>
+                </div>
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:60px;">2 Stars</span>
+                  <div class="rating-bar flex-grow-1"><div class="rating-bar-fill" style="width:0%;background:#fd7e14;"></div></div>
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:35px;">0%</span>
+                </div>
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:60px;">1 Star</span>
+                  <div class="rating-bar flex-grow-1"><div class="rating-bar-fill" style="width:0%;background:var(--primary-red);"></div></div>
+                  <span style="color:rgba(255,255,255,0.6);font-size:0.85rem;min-width:35px;">0%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonials Carousel -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag">Featured Reviews</span>
+          <h2 class="section-title">What Customers <span>Say</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div id="testimonialsCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center" style="padding:2.5rem;">
+                    <div class="testimonial-stars" style="font-size:1.3rem;margin-bottom:1rem;">★★★★★</div>
+                    <p class="testimonial-text" style="font-size:1.1rem;">"I brought my BMW in for an engine diagnostic and was absolutely blown away by the level of professionalism. Marcus diagnosed the issue within 20 minutes, explained everything clearly, and had it fixed by end of day. Best auto shop experience I've ever had."</p>
+                    <div class="testimonial-author" style="justify-content:center;margin-top:1.5rem;">
+                      <img src="https://i.pravatar.cc/100?img=1" alt="James R." loading="lazy" />
+                      <div class="testimonial-author-info" style="text-align:left;">
+                        <strong>James R.</strong>
+                        <span>BMW 5 Series Owner &bull; March 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center" style="padding:2.5rem;">
+                    <div class="testimonial-stars" style="font-size:1.3rem;margin-bottom:1rem;">★★★★★</div>
+                    <p class="testimonial-text" style="font-size:1.1rem;">"The ceramic coating on my Mustang is absolutely stunning. My car looks better than it did brand new. She took her time, explained the process, and the results are genuinely incredible. Worth every dollar."</p>
+                    <div class="testimonial-author" style="justify-content:center;margin-top:1.5rem;">
+                      <img src="https://i.pravatar.cc/100?img=5" alt="Sarah M." loading="lazy" />
+                      <div class="testimonial-author-info" style="text-align:left;">
+                        <strong>Sarah M.</strong>
+                        <span>Ford Mustang Owner &bull; February 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center" style="padding:2.5rem;">
+                    <div class="testimonial-stars" style="font-size:1.3rem;margin-bottom:1rem;">★★★★★</div>
+                    <p class="testimonial-text" style="font-size:1.1rem;">"Stranded at 3am after a blowout on the highway. Called Z Elite and they were there in under 25 minutes. Changed my tire, checked my brake system as a courtesy, and even topped up my fluids. This is what 24/7 service should look like!"</p>
+                    <div class="testimonial-author" style="justify-content:center;margin-top:1.5rem;">
+                      <img src="https://i.pravatar.cc/100?img=3" alt="Mike T." loading="lazy" />
+                      <div class="testimonial-author-info" style="text-align:left;">
+                        <strong>Mike T.</strong>
+                        <span>Emergency Roadside Customer &bull; January 2024</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" style="left:-15px;"><span class="carousel-control-prev-icon"></span></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" style="right:-15px;"><span class="carousel-control-next-icon"></span></button>
+          <div class="carousel-indicators" style="position:relative;margin-top:1.5rem;">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Reviews Grid -->
+    <section class="section-pad" style="background:var(--dark-bg-2);">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag">All Reviews</span>
+          <h2 class="section-title">More Happy <span>Customers</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"David fixed my transmission issue that two other shops couldn't figure out. He explained exactly what was wrong and saved me over $800 compared to what the dealership quoted. Highly recommend!"</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=7" alt="Tom H." loading="lazy" /><div class="testimonial-author-info"><strong>Tom H.</strong><span>Honda Accord &bull; Dec 2023</span></div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up" data-delay="100">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Full interior detailing package transformed my car completely. There was a stubborn pet odor that had been there for months. They eliminated it completely and the interior looks brand new."</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=9" alt="Lisa K." loading="lazy" /><div class="testimonial-author-info"><strong>Lisa K.</strong><span>Toyota RAV4 &bull; Nov 2023</span></div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up" data-delay="200">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Got my brakes done here after the dealer quoted me $1,200. Z Elite did the same job — quality parts, full warranty — for $380. Honest, efficient, and professional. This is my shop for life."</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=13" alt="Ryan C." loading="lazy" /><div class="testimonial-author-info"><strong>Ryan C.</strong><span>Chevy Silverado &bull; Oct 2023</span></div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up" data-delay="300">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The paint correction on my black Mercedes was absolutely flawless. Every swirl mark, water spot, and scratch is completely gone. The car looks like it just rolled off the production line."</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=17" alt="Angela W." loading="lazy" /><div class="testimonial-author-info"><strong>Angela W.</strong><span>Mercedes C-Class &bull; Sep 2023</span></div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up" data-delay="400">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"My AC stopped working during a heatwave. Called at 8pm and they fit me in first thing next morning. Had it running perfectly by noon. Carlos kept me updated the whole time. Outstanding!"</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=20" alt="George P." loading="lazy" /><div class="testimonial-author-info"><strong>George P.</strong><span>Nissan Altima &bull; Aug 2023</span></div></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card fade-in-up" data-delay="500">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Brought my Jeep in for a full service check before a road trip. They did a thorough inspection, found a minor suspension issue, fixed it on the spot, and had me road-trip ready in 3 hours."</p>
+              <div class="testimonial-author"><img src="https://i.pravatar.cc/100?img=22" alt="Natasha B." loading="lazy" /><div class="testimonial-author-info"><strong>Natasha B.</strong><span>Jeep Wrangler &bull; Jul 2023</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container text-center position-relative">
+        <h2 class="section-title">Join Our Growing Family of Happy Customers</h2>
+        <p style="color:rgba(255,255,255,0.9);font-size:1.05rem;margin-bottom:2rem;">Experience the Z Elite difference today.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="booking.html" class="btn-red" style="background:#fff;color:var(--primary-red);border-color:#fff;">Book Now <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="tel:+11234567890" class="btn-outline-red"><i class="fas fa-phone me-2"></i>(123) 456-7890</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /tab-testimonials -->
+
+  <!-- ===== TAB 2: BLOG ===== -->
+  <div class="tab-pane fade" id="tab-blog" role="tabpanel" aria-labelledby="blog-tab">
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-tag">Knowledge Base</span>
+          <h2 class="section-title">Auto Care <span>Tips &amp; News</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Blog Search -->
+        <div class="mb-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div style="position:relative;">
+                <i class="fas fa-search" style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.35);pointer-events:none;"></i>
+                <input type="text" id="blogSearch" class="faq-search" placeholder="Search blog posts..." style="padding-left:2.75rem;" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Blog Posts -->
+          <div class="col-lg-8">
+            <div class="row g-4" id="blogGrid">
+              <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+                <div class="blog-card fade-in-up">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=60" alt="How Often Should You Change Your Oil?" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Maintenance Tips</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>March 15, 2024</span></div>
+                    <h5>How Often Should You Really Change Your Oil?</h5>
+                    <p>The old "every 3,000 miles" rule is outdated for modern vehicles. We break down exactly what your car's manual says and what today's synthetic oils can do.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="detailing">
+                <div class="blog-card fade-in-up" data-delay="100">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=61" alt="Ceramic Coating Guide" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Detailing</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>March 8, 2024</span></div>
+                    <h5>The Ultimate Guide to Ceramic Coating: Is It Worth It?</h5>
+                    <p>Ceramic coating has transformed paint protection, but is the cost justified? We explain exactly what you get and why serious car owners swear by it.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="repairs">
+                <div class="blog-card fade-in-up" data-delay="200">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=62" alt="Brake Warning Signs" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Repairs</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>February 28, 2024</span></div>
+                    <h5>5 Warning Signs Your Brakes Need Immediate Attention</h5>
+                    <p>Ignoring brake problems is dangerous. Learn these critical warning signs and understand why prompt action could save your life.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+                <div class="blog-card fade-in-up" data-delay="300">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=63" alt="Seasonal Car Maintenance" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Maintenance Tips</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>February 14, 2024</span></div>
+                    <h5>Seasonal Car Maintenance: Preparing Your Vehicle for Summer</h5>
+                    <p>Summer heat is brutal on your vehicle's cooling system. Here's your complete checklist to make sure your car is summer-ready.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="detailing">
+                <div class="blog-card fade-in-up" data-delay="400">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=64" alt="DIY vs Professional Detailing" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Detailing</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 30, 2024</span></div>
+                    <h5>DIY Car Wash vs. Professional Detailing: The Real Difference</h5>
+                    <p>Professional detailing is a completely different level of care. We reveal what professional detailers do that you can't replicate in your driveway.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="news">
+                <div class="blog-card fade-in-up" data-delay="500">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=65" alt="Z Elite News" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">News</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 15, 2024</span></div>
+                    <h5>Z Elite Auto Care Now Offering Ceramic Coating Packages from $599</h5>
+                    <p>We're excited to launch our new range of professional ceramic coating packages, designed to suit every budget and vehicle type.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="repairs">
+                <div class="blog-card fade-in-up">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=66" alt="Engine Diagnostics Guide" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Repairs</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>January 5, 2024</span></div>
+                    <h5>Check Engine Light On? Here's What It Actually Means</h5>
+                    <p>Don't panic — but don't ignore it either. Learn what the most common codes mean and when to act fast.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-card-wrapper" data-category="maintenance">
+                <div class="blog-card fade-in-up" data-delay="100">
+                  <div class="blog-card-img"><img src="https://picsum.photos/600/400?random=67" alt="Tire Care Tips" loading="lazy" /></div>
+                  <div class="blog-card-body">
+                    <div class="blog-meta"><span class="blog-category">Maintenance Tips</span><span class="blog-date"><i class="bi bi-calendar3 me-1"></i>December 20, 2023</span></div>
+                    <h5>Tire Care 101: Everything You Need to Know to Stay Safe</h5>
+                    <p>Your tires are the only part of your car that touches the road. We cover pressure, rotation schedules, tread depth, and when to replace.</p>
+                    <a href="#" class="blog-read-more">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="mt-5" aria-label="Blog pagination">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">‹ Prev</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next ›</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="sidebar-widget">
+              <h5>Categories</h5>
+              <ul class="category-list">
+                <li><a href="#" class="category-filter-link" data-category="all">All Posts <span>8</span></a></li>
+                <li><a href="#" class="category-filter-link" data-category="maintenance">Maintenance Tips <span>3</span></a></li>
+                <li><a href="#" class="category-filter-link" data-category="detailing">Detailing <span>2</span></a></li>
+                <li><a href="#" class="category-filter-link" data-category="repairs">Repairs <span>2</span></a></li>
+                <li><a href="#" class="category-filter-link" data-category="news">News &amp; Updates <span>1</span></a></li>
+              </ul>
+            </div>
+            <div class="sidebar-widget">
+              <h5>Recent Posts</h5>
+              <div class="recent-post-item">
+                <img src="https://picsum.photos/120/80?random=60" alt="Oil Change Post" loading="lazy" />
+                <div><a href="#">How Often Should You Really Change Your Oil?</a><span>March 15, 2024</span></div>
+              </div>
+              <div class="recent-post-item">
+                <img src="https://picsum.photos/120/80?random=61" alt="Ceramic Coating Post" loading="lazy" />
+                <div><a href="#">The Ultimate Guide to Ceramic Coating</a><span>March 8, 2024</span></div>
+              </div>
+              <div class="recent-post-item">
+                <img src="https://picsum.photos/120/80?random=62" alt="Brake Post" loading="lazy" />
+                <div><a href="#">5 Warning Signs Your Brakes Need Attention</a><span>February 28, 2024</span></div>
+              </div>
+            </div>
+            <div class="sidebar-widget">
+              <h5>Newsletter</h5>
+              <p style="color:rgba(255,255,255,0.6);font-size:0.87rem;margin-bottom:1rem;">Subscribe for auto care tips and the latest news.</p>
+              <form class="newsletter-form" onsubmit="return false;">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email Address" />
+                <button type="submit" class="btn-red w-100" style="padding:0.65rem;border:none;border-radius:6px;cursor:pointer;font-size:0.9rem;"><i class="bi bi-envelope-fill me-2"></i>Subscribe Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /tab-blog -->
+
+  <!-- ===== TAB 3: FAQ ===== -->
+  <div class="tab-pane fade" id="tab-faq" role="tabpanel" aria-labelledby="faq-tab">
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle mt-3">Find answers to the most common questions about our services and processes.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+
+            <!-- FAQ Search -->
+            <div class="mb-5">
+              <div style="position:relative;">
+                <i class="fas fa-search" style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.35);pointer-events:none;"></i>
+                <input type="text" id="faqSearch" class="faq-search" placeholder="Search questions..." style="padding-left:2.75rem;" />
+              </div>
+            </div>
+
+            <!-- General -->
+            <div class="faq-category-title">General Questions</div>
+            <div class="faq-accordion accordion mb-4" id="faqGeneral">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What services does Z Elite Auto Care offer?</button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
+                  <div class="accordion-body">We offer engine diagnostics, oil changes, brake service, transmission service, tire rotation, battery replacement, AC service, suspension repairs, full car detailing, paint correction, ceramic coating, engine steam cleaning, and 24/7 roadside assistance.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What are your hours of operation?</button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse">
+                  <div class="accordion-body">We are open <strong>24 hours a day, 7 days a week, 365 days a year</strong> — including all public holidays. Whether you need an emergency roadside repair at 3am or a scheduled detail on Christmas Day, Z Elite Auto Care is here for you.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Where are you located?</button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse">
+                  <div class="accordion-body">We are located at <strong>123 Auto Drive, Suite 100, Your City, State 12345</strong>. Visit our <a href="contact.html#location" style="color:var(--primary-red);" onclick="event.preventDefault();window.location='contact.html';setTimeout(()=>{document.getElementById('location-tab')&&bootstrap.Tab.getOrCreateInstance(document.getElementById('location-tab')).show()},500)">Location tab</a> for a map and directions.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do you work on all vehicle makes and models?</button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! Our certified technicians work on virtually all makes and models including domestic and import vehicles, trucks, SUVs, crossovers, and luxury vehicles — from economy cars to high-end performance vehicles.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="faq-category-title">Pricing &amp; Payments</div>
+            <div class="faq-accordion accordion mb-4" id="faqPricing">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">How much does an oil change cost?</button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse">
+                  <div class="accordion-body">Oil and filter changes start from <strong>$39</strong> for conventional oil. Synthetic oil changes typically start from $59. The exact price depends on your vehicle type and oil specification. We'll always give you a precise quote before starting any work.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Do you provide free quotes?</button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! All estimates are <strong>100% free with no obligation</strong>. We operate on complete transparency — you'll always know exactly what your service will cost before we begin any work.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">What payment methods do you accept?</button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse">
+                  <div class="accordion-body">We accept <strong>cash, Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, and Zelle</strong>. Payment is due at time of service completion.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">Are there any hidden fees?</button>
+                </h2>
+                <div id="faq8" class="accordion-collapse collapse">
+                  <div class="accordion-body"><strong>Absolutely not.</strong> The quote you receive is the price you pay. No hidden diagnostic fees, surprise part mark-ups, or mystery labor charges — period.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process -->
+            <div class="faq-category-title">Service Process &amp; Timing</div>
+            <div class="faq-accordion accordion mb-4" id="faqProcess">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">How long does a full car detail take?</button>
+                </h2>
+                <div id="faq9" class="accordion-collapse collapse">
+                  <div class="accordion-body">A full car detail typically takes <strong>4 to 8 hours</strong> depending on vehicle size, condition, and package chosen. Express details can be completed in 2–3 hours. Ceramic coating applications require 1–2 days for full curing.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">Can I wait for my vehicle while it's being serviced?</button>
+                </h2>
+                <div id="faq10" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! We have a comfortable customer waiting area with free Wi-Fi, coffee, and TV. For longer jobs, we can arrange a courtesy ride or you're welcome to drop off your vehicle and pick it up when ready.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">How quickly can you respond to a roadside emergency?</button>
+                </h2>
+                <div id="faq11" class="accordion-collapse collapse">
+                  <div class="accordion-body">Our target response time within our service area is <strong>30 minutes or less</strong>. In most cases, we arrive in 20–25 minutes. Call us at (123) 456-7890 for immediate assistance.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Warranty -->
+            <div class="faq-category-title">Warranty &amp; Quality</div>
+            <div class="faq-accordion accordion mb-4" id="faqWarranty">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">Do you offer a warranty on repairs?</button>
+                </h2>
+                <div id="faq12" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! All mechanical repairs come with a <strong>12-month / 12,000-mile warranty</strong> on parts and labor. Detailing services carry a satisfaction guarantee. Ceramic coatings come with a 2-year warranty.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13">What type of parts do you use?</button>
+                </h2>
+                <div id="faq13" class="accordion-collapse collapse">
+                  <div class="accordion-body">We use <strong>OEM parts or premium aftermarket alternatives</strong> that meet or exceed OEM specifications. We never use cheap, low-quality parts. Just let us know if you have brand preferences when booking.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14">Are your technicians certified?</button>
+                </h2>
+                <div id="faq14" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! Our lead technicians are <strong>ASE (Automotive Service Excellence) certified</strong>. Our detailing team holds IDA certifications, and our ceramic coating specialists are trained by leading coating manufacturers.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking -->
+            <div class="faq-category-title">Booking &amp; Appointments</div>
+            <div class="faq-accordion accordion mb-4" id="faqBooking">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15">How do I book an appointment?</button>
+                </h2>
+                <div id="faq15" class="accordion-collapse collapse">
+                  <div class="accordion-body">You can book through our <a href="booking.html" style="color:var(--primary-red);">online booking form</a>, by calling <strong>(123) 456-7890</strong>, or by messaging us on <strong>WhatsApp</strong>. Walk-ins are also welcome for most services.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq16">Can I cancel or reschedule my appointment?</button>
+                </h2>
+                <div id="faq16" class="accordion-collapse collapse">
+                  <div class="accordion-body">Yes! We ask for at least <strong>24 hours notice</strong> for cancellations or rescheduling to avoid any fees. Simply call or text us to reschedule at no charge with adequate notice.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Still Have Questions -->
+        <div class="row align-items-center g-4 mt-4" style="background:var(--dark-bg-2);border-radius:16px;padding:2rem;">
+          <div class="col-lg-7">
+            <h3 style="color:var(--white);font-weight:800;margin-bottom:0.5rem;">Still Have Questions?</h3>
+            <p style="color:rgba(255,255,255,0.6);margin:0;">Our team is available 24/7 to answer any questions and help you book the right service.</p>
+          </div>
+          <div class="col-lg-5 d-flex gap-3 flex-wrap justify-content-lg-end">
+            <a href="contact.html" class="btn-red"><i class="bi bi-envelope-fill me-2"></i>Send Us a Message</a>
+            <a href="tel:+11234567890" class="btn-red-outline-only"><i class="fas fa-phone me-2"></i>Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /tab-faq -->
+
+</div><!-- /tab-content -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Z <span>Elite</span> Auto Care</a>
+        <p class="footer-desc">Your trusted partner for professional auto care services. Available 24/7 to keep your vehicle in peak condition.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact &amp; Location</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Engine Diagnostics</a></li>
+          <li><a href="services.html">Brake Service</a></li>
+          <li><a href="services.html">Auto Detailing</a></li>
+          <li><a href="services.html">Ceramic Coating</a></li>
+          <li><a href="services.html">Roadside Help</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>(123) 456-7890<br><small>Available 24/7</small></span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@zeliteautocare.com</span></div>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Auto Drive, Suite 100<br>Your City, State 12345</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Open 24/7 — 365 Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 <span>Z Elite Auto Care</span>. All Rights Reserved. | <a href="contact.html" style="color:var(--primary-red);">Contact Us</a> | <a href="community.html" style="color:var(--primary-red);">Community</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Auto-switch to correct tab based on URL hash
+  (function() {
+    const hash = window.location.hash;
+    const map = { '#testimonials': 'testimonials-tab', '#blog': 'blog-tab', '#faq': 'faq-tab' };
+    const tabId = map[hash];
+    if (tabId) {
+      const tab = document.getElementById(tabId);
+      if (tab) { bootstrap.Tab.getOrCreateInstance(tab).show(); }
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a service at Z Elite Auto Care. Schedule your appointment online — available 24/7 for mechanical repairs, detailing, and more." />
+  <title>Book a Service - Z Elite Auto Care</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-spinner"></div></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-car-front-fill"></i> Z <span>Elite</span> Auto Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="our-work.html">Our Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact &amp; Location</a></li>
+        <li class="nav-item"><a class="nav-link navbar-cta active" href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Book a Service</li></ol></nav>
+    <h1>Book a <span>Service</span></h1>
+    <p style="color:rgba(255,255,255,0.6);margin:0.5rem 0 0;max-width:540px;">Schedule your appointment online in minutes. We'll confirm your booking within 30 minutes — available 24/7.</p>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Booking Form -->
+      <div class="col-lg-8">
+        <div style="background:var(--dark-bg-2);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:2.5rem;">
+
+          <!-- Success -->
+          <div id="bookingSuccess" class="alert-success-custom d-none mb-4">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            <strong>Booking Request Received!</strong> We'll confirm your appointment within 30 minutes via email or phone.
+          </div>
+          <!-- Error -->
+          <div id="bookingError" class="alert-error-custom d-none mb-4">
+            <i class="bi bi-exclamation-circle-fill me-2"></i>
+            Please fill in all required fields correctly.
+          </div>
+
+          <form id="bookingForm" novalidate>
+
+            <!-- Step 1: Vehicle Info -->
+            <div class="booking-section mb-4">
+              <h5 class="booking-section-title"><span class="step-badge">1</span> Vehicle Information</h5>
+              <div class="row g-3">
+                <div class="col-sm-4">
+                  <label class="form-label" for="vehicleYear">Year <span style="color:var(--primary-red);">*</span></label>
+                  <input type="number" class="form-control" id="vehicleYear" placeholder="e.g. 2020" min="1990" max="2025" required />
+                  <div class="invalid-feedback">Please enter vehicle year.</div>
+                </div>
+                <div class="col-sm-4">
+                  <label class="form-label" for="vehicleMake">Make <span style="color:var(--primary-red);">*</span></label>
+                  <input type="text" class="form-control" id="vehicleMake" placeholder="e.g. Toyota" required />
+                  <div class="invalid-feedback">Please enter vehicle make.</div>
+                </div>
+                <div class="col-sm-4">
+                  <label class="form-label" for="vehicleModel">Model <span style="color:var(--primary-red);">*</span></label>
+                  <input type="text" class="form-control" id="vehicleModel" placeholder="e.g. Camry" required />
+                  <div class="invalid-feedback">Please enter vehicle model.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="vehicleColor">Color</label>
+                  <input type="text" class="form-control" id="vehicleColor" placeholder="e.g. Silver" />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="vehicleMileage">Current Mileage</label>
+                  <input type="number" class="form-control" id="vehicleMileage" placeholder="e.g. 45000" min="0" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="vehicleVin">VIN (optional)</label>
+                  <input type="text" class="form-control" id="vehicleVin" placeholder="Vehicle Identification Number" maxlength="17" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Service Selection -->
+            <div class="booking-section mb-4">
+              <h5 class="booking-section-title"><span class="step-badge">2</span> Select Service(s) <span style="color:var(--primary-red);">*</span></h5>
+              <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:1rem;">Select one or more services you need.</p>
+              <div class="row g-2" id="serviceCheckboxes">
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="engine-diagnostics" class="service-checkbox" />
+                    <span><i class="fas fa-search me-2" style="color:var(--primary-red);"></i>Engine Diagnostics</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="oil-change" class="service-checkbox" />
+                    <span><i class="fas fa-oil-can me-2" style="color:var(--primary-red);"></i>Oil &amp; Filter Change</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="brake-service" class="service-checkbox" />
+                    <span><i class="fas fa-circle me-2" style="color:var(--primary-red);"></i>Brake Service</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="transmission" class="service-checkbox" />
+                    <span><i class="fas fa-cogs me-2" style="color:var(--primary-red);"></i>Transmission Service</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="tire-service" class="service-checkbox" />
+                    <span><i class="fas fa-circle-notch me-2" style="color:var(--primary-red);"></i>Tire Rotation &amp; Balance</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="battery" class="service-checkbox" />
+                    <span><i class="fas fa-battery-full me-2" style="color:var(--primary-red);"></i>Battery Replacement</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="ac-service" class="service-checkbox" />
+                    <span><i class="fas fa-snowflake me-2" style="color:var(--primary-red);"></i>AC Service</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="suspension" class="service-checkbox" />
+                    <span><i class="fas fa-car-crash me-2" style="color:var(--primary-red);"></i>Suspension &amp; Steering</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="full-detailing" class="service-checkbox" />
+                    <span><i class="fas fa-spray-can me-2" style="color:var(--primary-red);"></i>Full Car Detailing</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="interior-detailing" class="service-checkbox" />
+                    <span><i class="fas fa-couch me-2" style="color:var(--primary-red);"></i>Interior Detailing</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="exterior-polish" class="service-checkbox" />
+                    <span><i class="fas fa-star me-2" style="color:var(--primary-red);"></i>Exterior Polish &amp; Wax</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="paint-correction" class="service-checkbox" />
+                    <span><i class="fas fa-paint-brush me-2" style="color:var(--primary-red);"></i>Paint Correction</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="ceramic-coating" class="service-checkbox" />
+                    <span><i class="fas fa-shield-alt me-2" style="color:var(--primary-red);"></i>Ceramic Coating</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="engine-steam" class="service-checkbox" />
+                    <span><i class="fas fa-fire me-2" style="color:var(--primary-red);"></i>Engine Steam Clean</span>
+                  </label>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <label class="service-checkbox-label">
+                    <input type="checkbox" value="roadside" class="service-checkbox" />
+                    <span><i class="fas fa-road me-2" style="color:var(--primary-red);"></i>Roadside Assistance</span>
+                  </label>
+                </div>
+              </div>
+              <div id="serviceError" class="text-danger mt-2 d-none" style="font-size:0.85rem;"><i class="bi bi-exclamation-circle me-1"></i>Please select at least one service.</div>
+            </div>
+
+            <!-- Step 3: Date & Time -->
+            <div class="booking-section mb-4">
+              <h5 class="booking-section-title"><span class="step-badge">3</span> Preferred Date &amp; Time <span style="color:var(--primary-red);">*</span></h5>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingDate">Preferred Date <span style="color:var(--primary-red);">*</span></label>
+                  <input type="date" class="form-control" id="bookingDate" required />
+                  <div class="invalid-feedback">Please select a date.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingTime">Preferred Time <span style="color:var(--primary-red);">*</span></label>
+                  <select class="form-select" id="bookingTime" required>
+                    <option value="" disabled selected>Select a time slot...</option>
+                    <option value="00:00">12:00 AM (Midnight)</option>
+                    <option value="06:00">6:00 AM (Early Morning)</option>
+                    <option value="08:00">8:00 AM (Morning)</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="12:00">12:00 PM (Noon)</option>
+                    <option value="14:00">2:00 PM (Afternoon)</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:00">6:00 PM (Evening)</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="22:00">10:00 PM (Late Night)</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a time slot.</div>
+                </div>
+                <div class="col-12">
+                  <div style="background:rgba(220,20,60,0.08);border:1px solid rgba(220,20,60,0.2);border-radius:8px;padding:0.75rem 1rem;">
+                    <i class="bi bi-clock-fill me-2" style="color:var(--primary-red);"></i>
+                    <span style="color:rgba(255,255,255,0.8);font-size:0.88rem;">We're open <strong>24 hours a day, 7 days a week</strong>. Any time slot you choose is available!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Personal Info -->
+            <div class="booking-section mb-4">
+              <h5 class="booking-section-title"><span class="step-badge">4</span> Your Contact Information</h5>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingName">Full Name <span style="color:var(--primary-red);">*</span></label>
+                  <input type="text" class="form-control" id="bookingName" placeholder="John Smith" required minlength="2" />
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingEmail">Email Address <span style="color:var(--primary-red);">*</span></label>
+                  <input type="email" class="form-control" id="bookingEmail" placeholder="john@example.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingPhone">Phone Number <span style="color:var(--primary-red);">*</span></label>
+                  <input type="tel" class="form-control" id="bookingPhone" placeholder="(123) 456-7890" required />
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="bookingContact">Preferred Contact Method</label>
+                  <select class="form-select" id="bookingContact">
+                    <option value="phone">Phone Call</option>
+                    <option value="sms">SMS / Text</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="email">Email</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5: Notes -->
+            <div class="booking-section mb-4">
+              <h5 class="booking-section-title"><span class="step-badge">5</span> Additional Notes</h5>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label" for="bookingNotes">Describe the Issue / Special Requests</label>
+                  <textarea class="form-control" id="bookingNotes" rows="4" placeholder="Describe the issue, any symptoms you've noticed, or any special requests for your service..."></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check" style="padding-left:0;">
+                    <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;">
+                      <input type="checkbox" id="bookingDropoff" style="margin-top:0.2rem;width:18px;height:18px;accent-color:var(--primary-red);flex-shrink:0;" />
+                      <span style="color:rgba(255,255,255,0.75);font-size:0.9rem;">I'd like to drop off my vehicle and pick it up when it's ready</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check" style="padding-left:0;">
+                    <label style="display:flex;align-items:flex-start;gap:0.75rem;cursor:pointer;">
+                      <input type="checkbox" id="bookingTerms" required style="margin-top:0.2rem;width:18px;height:18px;accent-color:var(--primary-red);flex-shrink:0;" />
+                      <span style="color:rgba(255,255,255,0.75);font-size:0.9rem;">I agree that all quoted prices will be confirmed before any work begins <span style="color:var(--primary-red);">*</span></span>
+                    </label>
+                    <div class="invalid-feedback" style="padding-left:2rem;">You must agree to proceed.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-red w-100" style="padding:1rem;font-size:1.05rem;border-radius:8px;border:none;cursor:pointer;font-weight:700;">
+              <i class="bi bi-calendar2-check-fill me-2"></i>Confirm Booking Request
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+
+        <!-- Why Book With Us -->
+        <div style="background:var(--dark-bg-2);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:2rem;margin-bottom:1.5rem;">
+          <h5 style="color:var(--white);font-weight:800;margin-bottom:1.25rem;border-bottom:2px solid var(--primary-red);padding-bottom:0.75rem;">
+            <i class="bi bi-shield-check-fill me-2" style="color:var(--primary-red);"></i>Why Book With Us
+          </h5>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <i class="bi bi-check-circle-fill" style="color:#28a745;font-size:1.1rem;margin-top:0.1rem;flex-shrink:0;"></i>
+              <div><strong style="color:var(--white);font-size:0.9rem;">Confirmed in 30 Minutes</strong><p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin:0.2rem 0 0;">We'll confirm your booking via phone or email quickly.</p></div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <i class="bi bi-check-circle-fill" style="color:#28a745;font-size:1.1rem;margin-top:0.1rem;flex-shrink:0;"></i>
+              <div><strong style="color:var(--white);font-size:0.9rem;">Free Estimates</strong><p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin:0.2rem 0 0;">All quotes are 100% free with zero obligation.</p></div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <i class="bi bi-check-circle-fill" style="color:#28a745;font-size:1.1rem;margin-top:0.1rem;flex-shrink:0;"></i>
+              <div><strong style="color:var(--white);font-size:0.9rem;">Open 24/7</strong><p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin:0.2rem 0 0;">Any time slot you choose is available — we never close.</p></div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <i class="bi bi-check-circle-fill" style="color:#28a745;font-size:1.1rem;margin-top:0.1rem;flex-shrink:0;"></i>
+              <div><strong style="color:var(--white);font-size:0.9rem;">No Hidden Fees</strong><p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin:0.2rem 0 0;">The price you're quoted is the price you pay.</p></div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:0.75rem;">
+              <i class="bi bi-check-circle-fill" style="color:#28a745;font-size:1.1rem;margin-top:0.1rem;flex-shrink:0;"></i>
+              <div><strong style="color:var(--white);font-size:0.9rem;">12-Month Warranty</strong><p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin:0.2rem 0 0;">All mechanical repairs backed by 12-month / 12,000-mile warranty.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Quick -->
+        <div style="background:var(--dark-bg-2);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:2rem;margin-bottom:1.5rem;">
+          <h5 style="color:var(--white);font-weight:800;margin-bottom:1.25rem;border-bottom:2px solid var(--primary-red);padding-bottom:0.75rem;">
+            <i class="bi bi-telephone-fill me-2" style="color:var(--primary-red);"></i>Prefer to Call?
+          </h5>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.88rem;margin-bottom:1rem;">Call or message us directly to book your appointment instantly.</p>
+          <a href="tel:+11234567890" style="display:flex;align-items:center;justify-content:center;gap:8px;background:var(--primary-red);color:#fff;padding:0.75rem 1.5rem;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;margin-bottom:0.75rem;">
+            <i class="fas fa-phone-alt"></i> (123) 456-7890
+          </a>
+          <a href="https://wa.me/1234567890?text=Hi%2C%20I%20would%20like%20to%20book%20a%20service%20at%20Z%20Elite%20Auto%20Care." target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;padding:0.75rem 1.5rem;border-radius:8px;font-weight:700;font-size:0.95rem;text-decoration:none;">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+
+        <!-- Rating Badge -->
+        <div style="background:rgba(220,20,60,0.08);border:1px solid rgba(220,20,60,0.2);border-radius:16px;padding:1.5rem;text-align:center;">
+          <div style="font-size:2.5rem;font-weight:900;color:var(--primary-red);line-height:1;">4.9</div>
+          <div style="color:#ffc107;font-size:1.2rem;margin:0.3rem 0;">★★★★★</div>
+          <p style="color:rgba(255,255,255,0.6);font-size:0.85rem;margin:0;">Based on 218 verified reviews</p>
+          <a href="community.html#testimonials" style="color:var(--primary-red);font-size:0.85rem;text-decoration:none;margin-top:0.5rem;display:inline-block;">Read what customers say →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand" href="index.html"><i class="bi bi-car-front-fill me-2"></i>Z <span>Elite</span> Auto Care</a>
+        <p class="footer-desc">Your trusted partner for professional auto care services. Available 24/7 to keep your vehicle in peak condition.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="contact.html">Contact &amp; Location</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html">Engine Diagnostics</a></li>
+          <li><a href="services.html">Brake Service</a></li>
+          <li><a href="services.html">Auto Detailing</a></li>
+          <li><a href="services.html">Ceramic Coating</a></li>
+          <li><a href="services.html">Roadside Help</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h6>Contact Us</h6>
+        <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>(123) 456-7890<br><small>Available 24/7</small></span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@zeliteautocare.com</span></div>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>123 Auto Drive, Suite 100<br>Your City, State 12345</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Open 24/7 — 365 Days a Year</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2024 <span>Z Elite Auto Care</span>. All Rights Reserved. | <a href="contact.html" style="color:var(--primary-red);">Contact Us</a> | <a href="community.html" style="color:var(--primary-red);">Community</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  // Set minimum date to today
+  (function() {
+    const dateInput = document.getElementById('bookingDate');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  })();
+
+  // Booking form submission
+  const bookingForm = document.getElementById('bookingForm');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const services = document.querySelectorAll('.service-checkbox:checked');
+      const serviceError = document.getElementById('serviceError');
+
+      bookingForm.classList.add('was-validated');
+
+      if (services.length === 0) {
+        serviceError.classList.remove('d-none');
+        return;
+      } else {
+        serviceError.classList.add('d-none');
+      }
+
+      if (!bookingForm.checkValidity()) return;
+
+      const terms = document.getElementById('bookingTerms');
+      if (!terms.checked) return;
+
+      // Show success
+      document.getElementById('bookingSuccess').classList.remove('d-none');
+      document.getElementById('bookingError').classList.add('d-none');
+      bookingForm.reset();
+      bookingForm.classList.remove('was-validated');
+      window.scrollTo({ top: bookingForm.closest('.container').offsetTop - 100, behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
